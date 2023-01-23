@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { Routes, Route, Link } from 'react-router-dom'
 import Router from './shared/Router'
-// import Router from "./Router";
+import { mainTheme } from './assets/theme/theme'
 
 /* 전역 스코프에 올림 */
 
@@ -9,7 +9,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Router />
+      <ThemeProvider theme={mainTheme}>
+        <Router />
+      </ThemeProvider>
     </>
   )
 }
