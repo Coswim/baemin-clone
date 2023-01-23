@@ -1,11 +1,18 @@
-import styled from 'styled-components'
-import { mainTheme } from '../assets/theme/theme'
+import { Head } from '../components'
 
 const Main = () => {
-  return <MainWrap>메인이지</MainWrap>
+  return (
+    <div>
+      {/*head */}
+      <Head />
+      {/* body */}
+
+      {/* bottom */}
+    </div>
+  )
 }
 export default Main
 
-const MainWrap = styled.div`
-  background-color: ${mainTheme.bgColor};
-`
+// const MainWrap = styled.div`
+//   background-color: ${mainTheme.bgColor};
+// `
