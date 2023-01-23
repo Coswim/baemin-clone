@@ -111,7 +111,6 @@ export default MainBody
 
 const Wrap = styled.div`
   padding: 12px;
-  height: 230px;
   align-items: center;
   /* border: 1px solid blue; */
 `
