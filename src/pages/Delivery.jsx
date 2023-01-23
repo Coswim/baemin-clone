@@ -1,22 +1,15 @@
 import styled from 'styled-components'
-import { mainTheme } from '../assets/theme/theme'
-import { Routes, Route } from 'react-router-dom'
-import TableOne from './TableOne'
-import TableTwo from './TableTwo'
-import TableThree from './TableThree'
-import TableFour from './TableFour'
-import { Grid } from '@mantine/core'
-import Carousel from './Carousel'
+import TableOne from '../components/delivery/TableOne'
+import TableTwo from '../components/delivery/TableTwo'
+import TableThree from '../components/delivery/TableThree'
+import TableFour from '../components/delivery/TableFour'
+import Carousel from '../components/delivery/Carousel'
 import { TbArrowsDownUp } from 'react-icons/tb'
 import { RiCoupon2Fill } from 'react-icons/ri'
-import { BsHandIndexThumb } from 'react-icons/bs'
 import { BiChevronDown } from 'react-icons/bi'
-import { AiFillStar } from 'react-icons/ai'
-import { AiOutlineHome } from 'react-icons/ai'
-import { BsCart } from 'react-icons/bs'
-import { BsArrowLeft } from 'react-icons/bs'
+import { AiFillStar, AiOutlineHome, AiOutlineCaretDown } from 'react-icons/ai'
+import { BsCart, BsHandIndexThumb, BsArrowLeft } from 'react-icons/bs'
 import { MdOutlineRiceBowl } from 'react-icons/md'
-import { AiOutlineCaretDown } from 'react-icons/ai'
 
 const Delivery = () => {
   return (
@@ -82,9 +75,9 @@ const Delivery = () => {
 
 export default Delivery
 
-const MainWrap = styled.div`
-  background-color: ${mainTheme.bgColor};
-`
+// const MainWrap = styled.div`
+//   background-color: ${mainTheme.bgColor};
+// `
 
 const Wrap = styled.div`
   .delivery-word {

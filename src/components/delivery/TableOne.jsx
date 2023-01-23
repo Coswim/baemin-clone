@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mainTheme } from '../assets/theme/theme'
+// import { mainTheme } from '../assets/theme/theme'
 import { Grid } from '@mantine/core'
 
 const TableOne = () => {
@@ -45,6 +45,6 @@ const TableOne = () => {
 }
 export default TableOne
 
-const MainWrap = styled.div`
-  background-color: ${mainTheme.bgColor};
-`
+// const MainWrap = styled.div`
+//   background-color: ${mainTheme.bgColor};
+// `
