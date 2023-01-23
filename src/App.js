@@ -1,17 +1,24 @@
-import "./App.css";
-import { createGlobalStyle } from "styled-components";
-import { Routes, Route, Link } from "react-router-dom";
+import { createGlobalStyle } from 'styled-components'
+import { Routes, Route, Link } from 'react-router-dom'
+import Router from './shared/Router'
 // import Router from "./Router";
 
 /* 전역 스코프에 올림 */
+
+function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <Router />
+    </>
+  )
+}
+export default App
+
 const GlobalStyle = createGlobalStyle`
 body {
   font-family: 'Jua', sans-serif, 'Open Sans', sans-serif
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +40,7 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 display: block;
@@ -56,15 +63,4 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
-`;
-
-function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <div>ddd</div>
-      {/* <Router /> */}
-    </>
-  );
-}
-export default App;
+`
