@@ -1,7 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { Routes, Route, Link } from 'react-router-dom'
 import Router from './shared/Router'
-import { mainTheme } from './assets/theme/theme'
+import { mainTheme } from './shared/theme'
 import { MantineProvider } from '@mantine/core'
 
 /* 전역 스코프에 올림 */
@@ -21,9 +20,22 @@ function App() {
 export default App
 
 const GlobalStyle = createGlobalStyle`
-body {
-  font-family: 'Jua', sans-serif, 'Open Sans', sans-serif
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+font-family: 'BMHANNAPro';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,7 +57,6 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 display: block;

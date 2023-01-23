@@ -1658,6 +1658,13 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@mantine/carousel@^5.10.1":
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-5.10.1.tgz#10c4f0c103c40d3eecfc8f914dfc07c6fcacd7a1"
+  integrity sha512-TAcWlyy5aY4ikGbxD3kYytg6adwSzARA+pTiv1JxT6kXIzWMD/9Kd0d/4bPKPJx4Jk8uYTH36YH3DHC+IwRvSA==
+  dependencies:
+    "@mantine/utils" "5.10.1"
+
 "@mantine/core@^5.10.1":
   version "5.10.1"
   resolved "https://registry.yarnpkg.com/@mantine/core/-/core-5.10.1.tgz#98cbfbb13493e0d57051f3ddc22777931ca5b35f"
@@ -4112,6 +4119,23 @@ electron-to-chromium@^1.4.251:
   version "1.4.284"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz#61046d1e4cab3a25238f6bf7413795270f125592"
   integrity sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==
+
+embla-carousel-autoplay@^7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/embla-carousel-autoplay/-/embla-carousel-autoplay-7.0.8.tgz#eca0ce078b047ab8999ec6934d36a23d700c68d9"
+  integrity sha512-wGMMLYMkeZm4SfAqYru0CK9+2+ECVbLRWTaMSnjjaw7NNCNEzQEs6OXze+KE7X6ZCH9Ai0Ob3jtIjGK2TEzKRA==
+
+embla-carousel-react@^7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.8.tgz#704916a3a09c32b208dd90e87e289fd51edd38bd"
+  integrity sha512-Bkc3RtDH5HONtE+YyRTlrBQklKRaDdmiO/waT7n6XaSNzswvg3z1v/yJuNof4dv5O6U38WFOmufepvVsS58uVw==
+  dependencies:
+    embla-carousel "7.0.8"
+
+embla-carousel@7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.8.tgz#cf31bb06a5023e97ad59b2aff525c988c9e6528f"
+  integrity sha512-ImYLiRORMOsx4KgJlaGbg/h8EEKu44asQ9c8R24sJrrFkERO6EJNlfN1h7TUooGeLGoj8+F4Jnr6Dj8gqFQWkw==
 
 emittery@^0.10.2:
   version "0.10.2"

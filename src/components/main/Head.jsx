@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { CiFaceSmile, CiBellOn, CiGrid41, CiSearch } from 'react-icons/ci'
-import { mainTheme } from '../../assets/theme/theme'
+import { mainTheme } from '../../shared/theme'
 import { Input } from '@mantine/core'
 
 const Head = () => {

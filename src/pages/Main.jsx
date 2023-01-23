@@ -1,18 +1,21 @@
-import { Head } from '../components'
+import styled from 'styled-components'
+import { Head, MainBody } from '../components'
 
 const Main = () => {
   return (
-    <div>
+    <MainWrap>
       {/*head */}
       <Head />
       {/* body */}
+      <MainBody />
 
       {/* bottom */}
-    </div>
+    </MainWrap>
   )
 }
 export default Main
 
-// const MainWrap = styled.div`
-//   background-color: ${mainTheme.bgColor};
-// `
+const MainWrap = styled.div`
+  background-color: #f6f6f6;
+  height: 800px;
+`
