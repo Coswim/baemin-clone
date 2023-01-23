@@ -1,17 +1,41 @@
-import "./App.css";
-import { createGlobalStyle } from "styled-components";
-import { Routes, Route, Link } from "react-router-dom";
-// import Router from "./Router";
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import Router from './shared/Router'
+import { mainTheme } from './shared/theme'
+import { MantineProvider } from '@mantine/core'
 
 /* 전역 스코프에 올림 */
-const GlobalStyle = createGlobalStyle`
-body {
-  font-family: 'Jua', sans-serif, 'Open Sans', sans-serif
+
+function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <MantineProvider withGlobalStyles withNormalizeCSS>
+        <ThemeProvider theme={mainTheme}>
+          <Router />
+        </ThemeProvider>
+      </MantineProvider>
+    </>
+  )
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
-*/
+export default App
+
+const GlobalStyle = createGlobalStyle`
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'BMHANNAPro';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +57,6 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 display: block;
@@ -56,15 +79,4 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
-`;
-
-function App() {
-  return (
-    <>
-      <GlobalStyle />
-      <div>ddd</div>
-      {/* <Router /> */}
-    </>
-  );
-}
-export default App;
+`
