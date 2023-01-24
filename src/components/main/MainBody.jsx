@@ -44,10 +44,9 @@ const MainBody = () => {
         </div>
         <div>
           <BiBusSchool size={30} color={mainTheme.bgColor} />
-          전국별미 자리
+          전국별미
         </div>
       </SubButtonWrap>
-
       <CarouselStyles>
         <Carousel
           sx={{ flex: 1 }}
@@ -97,11 +96,11 @@ const MainBody = () => {
           쿠폰함
         </div>
         <div>
-          <BiGift size={25} color="orange" />
+          <BiGift size={25} />
           선물함
         </div>
         <div>
-          <BiHeart size={25} />찜 자리
+          <BiHeart size={25} />찜
         </div>
       </SideButtonWrap>
     </Wrap>

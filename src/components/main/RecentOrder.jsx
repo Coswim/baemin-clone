@@ -24,7 +24,7 @@ const RecentOrder = () => {
           mx="auto"
           withIndicators
           align="start"
-          slidesToScroll={3}
+          slidesToScroll={2}
           withControls={false}>
           {recentOrdersData.map((item, idx) => (
             <>
@@ -41,7 +41,7 @@ const RecentOrder = () => {
                     <span style={{ fontWeight: '700' }}>⭐️{item.star}</span>
                   </div>
                   <span>
-                    <span style={{ color: 'gray' }}>배달팁</span>
+                    <span style={{ color: 'gray' }}>배달팁 </span>
                     {item.deliveryTip}
                   </span>
                 </div>
