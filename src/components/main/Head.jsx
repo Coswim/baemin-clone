@@ -1,30 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { CiFaceSmile, CiBellOn, CiGrid41, CiSearch } from 'react-icons/ci'
+import { TfiLayoutGrid2, TfiThemifyFavicon, TfiBell } from 'react-icons/tfi'
 import { mainTheme } from '../../shared/theme'
 import { Input } from '@mantine/core'
+import { FaStar } from 'react-icons/fa'
+import { getGEO } from '../../helper'
 
 const Head = () => {
+  useEffect(() => {
+    console.log('1111')
+    getGEO()
+  })
   return (
     <Wrap>
       <UserInfo>
         <span>경기 포천시 가산면 가산로 194번길 42</span>
         <div className="headerIcons">
-          <CiGrid41 size={25} color="white" />
-          <CiBellOn size={25} color="white" />
-          <CiFaceSmile size={25} color="white" />
+          <TfiLayoutGrid2 size={22} color="white" />
+          <TfiBell size={22} color="white" />
+          <TfiThemifyFavicon size={22} color="white" />
+          <FaStar size={22} color="white"></FaStar>
         </div>
       </UserInfo>
       <InputWrap>
         <Input
-          icon={<CiSearch color={mainTheme.bgColor} />}
+          // icon={<CiSearch color={mainTheme.bgColor} />}
           placeholder="찾는 맛집이름이 뭐예요?"
           styles={theme => ({
             input: {
               '&:focus-within': {
                 borderColor: 'white',
               },
-              'box-shadow': '0px 5px 5px rgba(0, 0, 0, 0.1);',
+              boxShadow: '0px 5px 5px rgba(0, 0, 0, 0.1);',
               borderColor: 'white',
               borderRadius: '3px',
             },
@@ -45,17 +52,18 @@ const Wrap = styled.div`
 const UserInfo = styled.div`
   padding: 0 15px 5px 15px;
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   height: 40px;
   span {
     width: 70%;
     color: white;
     font-size: ${mainTheme.smallFont};
-    /* font-weight: ${mainTheme.pointWeight}; */
+    font-weight: ${mainTheme.pointWeight};
   }
   .headerIcons {
     display: flex;
-    width: 30%;
+    width: 25%;
     justify-content: space-between;
   }
 `
