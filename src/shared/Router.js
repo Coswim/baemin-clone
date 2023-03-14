@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { Main } from '../pages'
+import { Main, Pakage } from '../pages'
 import Delivery from '../pages/Delivery'
 
 const Router = () => {
@@ -7,6 +7,7 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/delivery" element={<Delivery />} />
+      <Route path="/pakage" element={<Pakage />} />
     </Routes>
   )
 }
